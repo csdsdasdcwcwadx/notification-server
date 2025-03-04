@@ -1,36 +1,38 @@
 # notification-server
 work-portfolio(acti)
 
-## 一、專案目的
-1. **啟用推播通知服務**  
-   - 建立一個伺服器來整合 AWS SNS 服務，以便向用戶的行動設備發送推播通知。
-   - 主要目的是確保產品能夠即時通知用戶重要的事件或警示，提升用戶體驗和反應速度。
-## 二、作業內容
-1. **伺服器架設**  
-   使用 Node.js 架設伺服器，負責處理來自產品的通知請求並與 AWS SNS 進行整合。
+## 1. Project Objective
+1. **Enable Push Notification Service**  
+   - Set up a server to integrate with AWS SNS to send push notifications to users' mobile devices.  
+   - The main goal is to ensure that the product can notify users of important events or alerts in real time, improving user experience and response speed.  
 
-2. **資料庫管理**  
-   使用 DynamoDB 來存儲通知服務的相關資料，確保資料的快速存取與高可用性。
+## 2. Work Content
+1. **Server Setup**  
+   Use Node.js to set up the server, which handles notification requests from the product and integrates with AWS SNS.  
 
-3. **推播服務整合**  
-   實現與 AWS SNS 的 API 串接，讓伺服器能夠將推播訊息發送至使用者的行動設備。
+2. **Database Management**  
+   Use DynamoDB to store notification service-related data, ensuring fast access and high availability.  
 
-## 三、使用技術
-1. **Node.js**   
-   作為伺服器端的開發語言，負責處理 HTTP 請求和與 AWS SNS 的互動。
+3. **Push Notification Integration**  
+   Implement API integration with AWS SNS so that the server can send push messages to users' mobile devices.  
+
+## 3. Technologies Used
+1. **Node.js**  
+   Used as the server-side development language to handle HTTP requests and interactions with AWS SNS.  
 
 2. **DynamoDB**  
-   用於存儲推播訊息的數據資料，提供高效能的 NoSQL 資料庫服務。
+   A high-performance NoSQL database for storing push notification data.  
 
 3. **AWS SNS**  
-   Amazon Simple Notification Service，用來管理推播通知並發送到不同的行動設備。
+   Amazon Simple Notification Service, used to manage push notifications and send them to various mobile devices.  
 
 4. **Putty**  
-   透過 Putty 工具進行伺服器的遠端連線與操作。
+   A tool used for remote server connection and operation.  
 
-## 四、專案挑戰與解決方案
-1. **推播消息的延遲**  
-   由於網絡波動或設備狀態的影響，可能會導致推播通知的延遲。為了解決這個問題，實施了重試機制和排程管理，確保推播訊息能夠即時且可靠地送達。
+## 4. Project Challenges and Solutions
+1. **Push Notification Delay**  
+   Network fluctuations or device status may cause push notification delays. To solve this issue, retry mechanisms and scheduling management were implemented to ensure timely and reliable delivery of push messages.  
 
-## 五、專案架構圖
-![image](https://github.com/user-attachments/assets/70f8b5fd-82f2-4ec3-a29b-3f0734233485)
+## 5. Project Architecture Diagram
+![image](https://github.com/user-attachments/assets/51ed8c0c-128e-4951-b0b5-9f4799ef2c24)
+
